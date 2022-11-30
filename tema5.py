@@ -58,7 +58,7 @@ import calendar
 #     for i in string:
 #         if i.islower():
 #             x += 1
-#         if i.isupper():
+#         elif i.isupper():
 #             y += 1
 #     print(f'Nr de caractere lower case este {x}')
 #     print(f'Nr de caractere upper case este {y}')
@@ -88,7 +88,16 @@ import calendar
 #     return print(nr_pozitive)
 # lista_nr_pozitive(2,-1,3,-2)
 # lista_nr_pozitive(-5, 4, 2,-7, 8, 10, 11, -1, 1)
-
+#
+#
+# lista_numere = [1, -4, 78, -5, 0, 85, 4, -10, -2]
+# def numere_pozitive(numere):
+#     lista_numere_pozitive = []
+#     for numar in numere:
+#         if numar > 0:
+#             lista_numere_pozitive.append(numar)
+#     return lista_numere_pozitive
+# print(numere_pozitive(lista_numere))
 
 #    9.
 # def comparare(x,y):
@@ -107,12 +116,13 @@ import calendar
 # def printeaza(a, set):
 #     if a  in set:
 #         print(f'Nu am adaugat nr in set. Acesta exista deja.')
-#         return print(False)
+#         return False
 #     else:
+#         set.add(a)
 #         print(f'Am adaugat nr nou in set.')
-#         return print(True)
-# printeaza(1, {6, 5, 8})
-# printeaza(1, {1,2,3})
+#         return True
+# print(printeaza(1, {6, 5, 8}))
+# print(printeaza(1, {1,2,3}))
 
 
 #    op. 1.
@@ -123,6 +133,31 @@ import calendar
 #     print(a[1])
 # cate_zile_sunt_in_luna(2)
 # cate_zile_sunt_in_luna(4)
+
+
+# def calendar(luna):
+#     lunile_anului = {
+#         'January': 31,
+#         'February': 28,
+#         'March': 31,
+#         'April': 30,
+#         'May': 31,
+#         'June': 30,
+#         'July': 31,
+#         'August': 31,
+#         'September': 30,
+#         'October': 31,
+#         'November': 30,
+#         'December': 31
+#     }
+#     if luna in lunile_anului:
+#         return lunile_anului.get(luna)
+#
+#
+# print(calendar('June'))
+# print(calendar('January'))
+# print(calendar('February'))
+
 
 
 #    op. 2.
@@ -159,6 +194,22 @@ import calendar
 # print(nr_max(2,5,1))
 # print(nr_max(3,1,8))
 
+# def maxim(x, y, z):
+#     if x == y == z:
+#         return ('numerele sunt egale')
+#     elif x >= y and x >= z:
+#         return (f'{x} este cel mai mare numar')
+#     elif y >= x and y >= z:
+#         return (f'{y} este cel mai mare numar')
+#     else:
+#         return (f'{z} este cel mai mare numar')
+#
+#
+# print(maxim(20, 20, 2))
+# print(maxim(5, 100, 100))
+# print(maxim(7, 7, 7))
+# print(maxim(17, 2, 17))
+
 
 #     op. 5
 # def suma_nr(a):
@@ -182,7 +233,7 @@ import calendar
 
 
 #   bonus 2.
-def reducere(x):
+
     
 
 
