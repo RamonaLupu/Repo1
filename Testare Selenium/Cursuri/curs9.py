@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-# locateri in Selenium
+# locatori in Selenium
 # 1. ID
 chrome_page = webdriver.Chrome() # .Chrome este clasa din pachetul Selenium
 chrome_page.get('https://the-internet.herokuapp.com/login') # accesarea paginii html dorite
@@ -14,6 +14,7 @@ chrome_page.find_element(By.ID, 'username').send_keys('Ramona')  # gasim un elel
 
 chrome_page.find_element(By.ID, 'password').send_keys('ramona1')
 time.sleep(5)
+
 
 chrome_page.find_element(By.TAG_NAME, 'button').click() # accesam elemente dupa tag_name
 time.sleep(5)
